@@ -164,7 +164,7 @@
 		font-size: 40px;
 		transition: background 0.3s;
 		text-decoration: none;
-		width: 17px
+		width: 176px
 	}
 
 	.btn-pricing:hover {
