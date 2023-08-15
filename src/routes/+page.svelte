@@ -1,21 +1,25 @@
 <script>
 	import logo from '../lib/assets/favicon.png';
+	import outgoing from '../lib/assets/outgoing.svg'
 </script>
 
 <nav>
 	<div class="logo"><img class="logo-img" src={logo} alt="Syntax Dev Logo" /></div>
 	<!-- <img class="about-img"src={about} alt="building about logo"> -->
-	<div class="about"><a href="/about">ABOUT</a></div>
-	<div class="showcase"><a href="/showcase">SHOWCASE</a></div>
+	<div class="about"><a href="/">ABOUT not done	&#40;not done yet&#41;</a></div>
+	<div class="showcase"><a href="/showcase">PRICING</a></div>
 	<div class="contact"><a href="/contact">CONTACT</a></div>
 </nav>
 <main>
 	<section class="intro-text">
-		<div>
+		<div class="main-text-container">
 			We make
 			<span class="special-text-v1" data-text="discord">&nbsp;discord</span>
-			<br />
+			<br/>
 			<span class="bots-text">Bots</span>
+			<br/>
+			<br/>
+			<a class="btn-pricing" href="/pricing"><span>Pricing</span><img class="outgoing-img" src={outgoing} alt="out going"></a>
 		</div>
 	</section>
 </main>
@@ -99,6 +103,8 @@
 		align-items: center;
 	}
 
+	
+
 	.intro-text {
 		font-weight: 700;
 		font-size: 70px;
@@ -145,4 +151,32 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+
+	.btn-pricing {
+		display: flex;
+		align-items: center;
+		margin: 0;
+		background-color: #5865f2;
+		border-radius: 50px;
+		padding: 20px 50px;
+		color: white;
+		border: none;
+		font-size: 40px;
+		transition: background 0.3s;
+		text-decoration: none;
+		width: 176px
+	}
+
+	.btn-pricing:hover {
+		background-color: #7681f3;
+		color: rgb(238, 232, 232);
+		cursor: pointer;
+	}
+
+	.outgoing-img {
+		align-items: end;
+		width: 50px;
+		transition: fill 0.3s
+	}
+
 </style>
