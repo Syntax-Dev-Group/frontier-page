@@ -6,8 +6,8 @@
 <nav>
 	<div class="logo"><img class="logo-img" src={logo} alt="Syntax Dev Logo" /></div>
 	<!-- <img class="about-img"src={about} alt="building about logo"> -->
-	<div class="about"><a href="/">ABOUT not done	&#40;not done yet&#41;</a></div>
-	<div class="showcase"><a href="/showcase">PRICING</a></div>
+	<div class="about"><a href="/about">ABOUT</a></div>
+	<div class="showcase"><a href="/pricing">PRICING</a></div>
 	<div class="contact"><a href="/contact">CONTACT</a></div>
 </nav>
 <main>
@@ -57,6 +57,14 @@
 	.contact:active,
 	.showcase:active {
 		background: rgb(54, 54, 54);
+	}
+
+	@media only screen and (max-width: 600px) {
+		nav > .about:active,
+		.contact:active,
+		.showcase {
+			display: none;
+		}
 	}
 
 	nav > .logo {
